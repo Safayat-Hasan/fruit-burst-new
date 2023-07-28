@@ -1,0 +1,23 @@
+/* Style for the popup trigger label */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Style for the hidden checkbox */
+.hidden {
+    display: none;
+}
+
+/* Style for the popup container when the checkbox is checked */
+#popup-toggle-1:checked+.fixed>div,#popup-toggle-2:checked+.fixed>div,#popup-toggle-3:checked+.fixed>div,#popup-toggle-4:checked+.fixed>div {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Initial style for the popup container */
+.fixed>div {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
